@@ -5,10 +5,12 @@ document.addEventListener("DOMContentLoaded",function(){
             const selectedOption = document.querySelector('input[name="quiz"]:checked');
             const userAnswer = selectedOption.value ;
 
-            if(userAnswer === correctAnswer){
+            if (userAnswer === correctAnswer)
+                {
             const feedback = document.getElementById("feedback");
             feedback.textContent = "Correct! Well done."
-           }else {
+           } 
+           else {
               feedback.textContent = "That's incorrect. Try again!"
            }
         }
